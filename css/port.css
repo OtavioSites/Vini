@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+
+}
+
+body{
+    
+    background: linear-gradient(to left, transparent 10%, #000814 100%), linear-gradient(to right, transparent 30%, #000814 150%), url(https://images.unsplash.com/photo-1490810194309-344b3661ba39?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dmlkZW8lMjBlZGl0aW5nfGVufDB8fDB8fHww);
+    
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    
+    
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    
+    align-items: center;
+    justify-content: start;
+}
+header > nav{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    height: 50px;
+    gap: 3rem;
+    
+    
+}
+a{
+     text-decoration: none;
+     color: #fff;
+    
+
+      
+}
+   span{
+     font-size: 1.5rem;
+     font-family: "bebas";
+     position: relative;
+     transition: all 0.5s;
+   }
+       
+    
+
+    span::before{
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: 20px;
+        border-radius: 2px;
+        width: 100%;
+        transform: scaleX(0);
+        height: 3px;
+        background-color: #fff;
+        color: #fff;
+        transition: all 0.5s;
+        
+        
+      
+        
+     }
+
+     span:hover::before{
+        transform: scaleX(1);
+        
+
+     }
+     section{
+        height: 85vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr );
+        grid-template-rows: repeat(3, 1fr);
+        grid-auto-flow: column;
+     }
+     section > div{
+        display: flex;
+        justify-content: center;
+        
+        flex-direction: column;
+        border: solid 2px red;
+     
+        color: white;
+     }
+     #bloco4{
+        grid-row: 1/3;
+     }
+     #bloco1{
+        height: 400px;
+        padding-left: 40px;
+        display: flex;
+        align-items: left;
+        gap: 30px;
+        justify-content: center;
+
+     }
+     .title{
+        font-size: 1rem;
+        font-family: "michroma";
+        
+
+     }
+     svg{
+        transition: all 0.5s;
+     }
+     svg:hover{
+        transform: scale(1.2);
+       
+
+     }
+     .title > h1{
+        letter-spacing: 2px;
+        position: relative;
+        
+        display: inline;
+     }
+     .title > h1::before{
+        content: '';
+        width: calc(100% + 5px);
+        transform: scaleX(1);
+        position: absolute;
+        bottom: 0;
+        border: 0;
+        height: 3px;
+        border-radius: 5px;
+        background-color: #005f73;
+     }
+     .title > hr{
+        
+       
+     }
+     #skillsoft{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: max-content;
+        padding: 10px;
+        gap: 5px;
+        height: auto;
+       
+     }
+     .skill{
+        display: flex;
+        width: 100%;
+        justify-content: start;
+        gap: 30px;
+        align-items: center;
+     }
+     .name{
+        font-size: 1.2rem;
+        font-family: geomanist;
+        width: 100px;
+     }
+     .bar{
+        width: 400px;
+        height: 2px;
+        background-color: #e5e5e5;
+        transition: all 1s ease-in-out;
+        position: relative;
+        display: flex;
+        align-items: center;
+        
+     }
+     .circle{
+        position: relative;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+    
+    #skillsoft > .skill:nth-of-type(1) > .bar > .circle{
+        left: 90%;
+        transform: translate(-50%);
+     }
+     
+    #skillsoft > .skill:nth-of-type(2) > .bar > .circle{
+        left: 70%;
+        transform: translate(-50%);
+     }
+     
+    #skillsoft > .skill:nth-of-type(3) > .bar > .circle{
+        left: 60%;
+        transform: translate(-50%);
+     }
+     
+    #skillsoft > .skill:nth-of-type(4) > .bar > .circle{
+        left: 30%;
+        transform: translate(-50%);
+     }
+
+    #skillsoft > .skill:nth-of-type(5) > .bar > .circle{
+        left: 40%;
+        transform: translate(-50%);
+     }
+     
+
+     #bloco2{
+        
+        height: 200px;
+        padding-left: 40px;
+        display: flex;
+        align-items: left;
+        gap: 30px;
+        justify-content: center;
+
+     
+
+     }
+     #languages{
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+        justify-content: start;
+       
+     }
+     
+     #languages > .bar > .circle{
+        left: 70%;
+        transform: translate(-50%);
+     }
+
+     #bloco3{
+        height: 200px;
+        padding-left: 40px;
+        display: flex;
+        align-items: left;
+        gap: 30px;
+        justify-content: center;
+
+
+     }
+
+     .persoSkill{
+        font-size: 1.3rem;
+        font-family: "geomanist";
+        
+     }
+     .persoSkill > ul{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        color: #e5e5e5;
+     }
+
+     #bloco4{
+        height: 100%;
+        padding: 5px;
+        display: flex;
+        align-items: left;
+        gap: 30px;
+        justify-content: center;
+
+     }
+     #experience{
+        display: flex;
+       
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+     }
+
+     #desc{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        padding: 10px;
+        height: 550px;
+        justify-content: center;
+        align-items: center;
+        
+     }
+
+     #canva{
+        width: 105px;
+        display: flex;
+        justify-content: center;
+        
+        height: 550px;
+        align-items: center;
+        
+     }
+     .exp > h2{
+        font-family: "geomanist";
+        font-size: 1.3rem;
+     }
+     .exp > p{
+        font-family: "simplifica";
+        font-size: 1.3rem;
+        letter-spacing: 3px;
+     }
+     #canva > img{
+        width: 500px;
+        transform: scale(2.1);
+   
+        position: relative;
+        -webkit-user-drag: none;
+     }
+
+
+
+
+
+     @font-face {
+    font-family: "Bebas";
+    src: url(../assets/fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Geomanist";
+    src: url(../assets/fonts/Geomanist-Regular.otf);
+}
+
+@font-face {
+    font-family: "michroma";
+    src: url(../assets/fonts/Michroma-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../assets/fonts/Raleway-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../assets/fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+@font-face {
+    font-family: "SIMPLIFICA";
+    src: url(../assets/fonts/SIMPLIFICA\ Typeface.ttf);
+}
