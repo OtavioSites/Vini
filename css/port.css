@@ -860,7 +860,9 @@ a{
      transition: all 0.5s;
    }
        
-    
+    span::before{
+        bottom: 0px;
+     }
 
      }
 
